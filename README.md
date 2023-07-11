@@ -64,9 +64,9 @@ We appreciate any contributions to improve this tutorial series. Please feel fre
 
 For any questions, you can reach out to us on YouTube, Facebook, or via email.
 
--YouTube: https://www.youtube.com/
--Facebook: https://www.facebook.com/
--email: info@codingthebrains.com
+- YouTube: https://www.youtube.com/
+- Facebook: https://www.facebook.com/
+- email: info@codingthebrains.com
 
 
 Enjoy the series and happy coding!
