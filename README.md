@@ -16,7 +16,7 @@ To run these examples on your local machine, you will need Python, Django, and o
 
 ```bash
 git clone https://github.com/Awaismaz/CodingTheBrains_Django.git
-cd django-tutorial-series
+cd CodingTheBrains_Django
 pip install -r requirements.txt
 ```
 
@@ -59,10 +59,6 @@ Then, open your web browser and go to `http://localhost:8000/` to view the appli
 ## Contributing
 
 We appreciate any contributions to improve this tutorial series. Please feel free to send a Pull Request if you have any suggestions or fixes.
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Contact
 
