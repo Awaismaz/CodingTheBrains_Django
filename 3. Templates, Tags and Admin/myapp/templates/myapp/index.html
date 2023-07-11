@@ -1,0 +1,36 @@
+{% extends "myapp/base.html"%}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block content %}
+<h1>
+    This is Index Page using Django Tags
+</h1>
+
+<h2>List of Pages</h2>
+<ul>
+    {% for page in pages %}
+
+    <li>{{page}}</li>
+
+    {% endfor %}
+
+</ul>
+
+<h2>List of Courses</h2>
+
+<ul>
+    {% for course in courses %}
+
+    <li>{{course}}</li>
+
+    {% endfor %}
+
+</ul>
+
+<p>
+    <a href="{% url 'myapp:home' %}">Go To home Page</a>
+</p>
+{% endblock %}

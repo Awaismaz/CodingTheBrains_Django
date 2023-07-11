@@ -1,0 +1,15 @@
+{% extends "myapp/base.html"%}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<h1>
+    This is Home Page using Django Tags
+</h1>
+<p>
+    <a href="{% url 'myapp:index' %}">Go To index Page</a>
+</p>
+{% endblock %}
+
