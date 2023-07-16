@@ -1,6 +1,7 @@
 # Django Tutorial Series
 
 Welcome to the repository for our Django Tutorial Series on YouTube. This repository holds all the coding files used throughout the series, neatly organized by video and topic.
+![359551278_1192208042171576_2160470807334276117_n](https://github.com/Awaismaz/CodingTheBrains_Django/assets/6538771/3e2feaef-c99b-42fb-80ba-3ef287ca487e)
 
 ## About The Series
 
