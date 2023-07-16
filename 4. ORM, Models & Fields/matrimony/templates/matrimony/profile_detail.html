@@ -1,0 +1,33 @@
+
+{% extends 'matrimony/base.html' %}   
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="{{ profile.profile_pic.url }}" class="card-img" alt="Profile picture">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ profile.name }}</h5>
+                            <p class="card-text"><small class="text-muted">{{ profile.age }} years old</small></p>
+                            <p class="card-text">{{ profile.bio }}</p>
+                            <p class="card-text">
+                                <strong>Occupation:</strong> {{ profile.occupation }}<br>
+                                <strong>Date of Birth:</strong> {{ profile.birth_date }}<br>
+                                <strong>Marital Status:</strong> {{ profile.is_married|yesno:"Married,Single" }}<br>
+                                <strong>Email:</strong> {{ profile.email }}<br>
+                            </p>
+                            <a href="{% url 'matrimony:profile_list' %}" class="btn btn-primary">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}
+
