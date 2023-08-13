@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Blog Posts</h2>
+<a href="{% url 'blog:post_new' %}"><button class="btn btn-primary">Add Post</button></a>
+{% for post in posts %}
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">By {{ post.author.username }} on {{ post.published_date }}</h6>
+            <p class="card-text">{{ post.text|truncatewords:40|safe }}</p>
+            <a href="{% url 'blog:post_detail' post.pk %}" class="card-link">Read More</a>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Load Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'matrimony/css/styles.css' %}">
+    <title>Matrimonial App</title>
+</head>
+
+<body>
+    {% include 'header.html' %}
+
+    <p></p>
+    
+    <main role="main" class="container">
+        {% block content %}{% endblock %}
+
+    </main>
+
+    {% include 'footer.html' %}
+    
+    <!-- Load Bootstrap JS -->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

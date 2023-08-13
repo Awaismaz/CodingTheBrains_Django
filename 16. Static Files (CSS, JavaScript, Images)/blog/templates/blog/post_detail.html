@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ post.title }}</h2>
+<p>By {{ post.author.username }} on {{ post.published_date }}</p>
+<p>{{ post.text|safe }}</p>
+
+<h4>Comments:</h4>
+{% for comment in comments %}
+    <div class="card mt-3">
+        <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">{{ comment.author }} on {{ comment.created_date }}</h6>
+            <p class="card-text">{{ comment.text }}</p>
+        </div>
+    </div>
+{% endfor %}
+
+<a href="{% url 'blog:add_comment' post.pk %}" class="btn btn-primary mt-3">Add Comment</a>
+{% endblock %}

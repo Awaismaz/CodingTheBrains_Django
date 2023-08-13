@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<h1>Add a New Profile!</h1>
+    <form method="post" enctype="multipart/form-data">
+
+        {% csrf_token %}
+        {{ formset.management_form }}
+        {% for form in formset %}
+            {{ form.as_p }}
+        {% endfor %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+{% endblock %}
